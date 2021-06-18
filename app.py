@@ -190,10 +190,12 @@ if red == "About the Project":
     burned in a forest fire based on some parameters like `Humidity(RH)`, `Wind(wind)`,`Rain(rain)`, 
     `Temperature(temp)` etc. 
     
-    The project ff is a part of Hacktoberfest contribution and it has been initiated by <a href="https://github.com/dsc-iem">DSC-IEM</a> .
-    We used different Model Building techniques for building the model and did an in-depth exploratory analysis 
-    of the provided data. And except these things, creating a user-friendly web-app and deploying it in cloud is 
-    also an integral part of a Data Science life cycle. So, we also have put together this web-app to show that.
+    This project is focus on technical solution towards sustainability. Forestfire is one of the major concern as it is getting worse day by day. 
+    The problem with forest fires is their uncontrolled spreading nature and their sheer sudden eruptability.
+    Most forest fire control departments are informed of fires when it's already too late. For this we introduce an UI where user will give user credentials 
+    with the latitude & longitude of the target area. We are sending these data in the form of API with SQL querries to Cloud. 
+    With the help of IBM Cloud these informations will be stored safely. We have also created a ML model which is capable of doing instance segmentation. 
+    This model will segregate fire in three parts on the basis of intensity of the fire (eg.- HIGH, MODERATE,LOW). Also an alarm will be there to alert in urgency. 
     
     <p style="color:blue;">If you liked this project then it will be really motivating for us if you can star our <a href="https://github.com/khanfarhan10/ForestFireDetect">Github Repository</a>😄.</p>
      
