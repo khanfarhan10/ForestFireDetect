@@ -1,9 +1,10 @@
-<br/>
-
-<a href="LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/soumya997/Smart-Exam-Form?style=for-the-badge"></a>
+[![Open in GitHub1s](https://img.shields.io/badge/View%20Code%20Online-VSCode%20GitHub1s-blue?style=plastic&logo=visual-studio-code)](https://github1s.com/khanfarhan10/ForestFireDetect)
+<a href="LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/soumya997/Smart-Exam-Form?style=plastic"></a>
+<br>
+<br>
   <img src="https://forthebadge.com/images/badges/built-with-love.svg">     <img src="https://forthebadge.com/images/badges/made-with-python.svg">    <img src="https://forthebadge.com/images/badges/open-source.svg">
 
-# ForestFireDetect
+# Fire - O - Detect
 Detection of Forest Fires using Satellite Imagery and Machine Learning.
 
 ### [Watch the Video Presentation on YouTube!](https://youtu.be/hV2cxghatG4)
