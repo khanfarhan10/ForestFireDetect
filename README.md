@@ -7,7 +7,6 @@
 <p align="center">
   <img src="/Images/Home.jpg" width="600" height="400">
 </p>
-<br/>
 
 # Fire - O - Detect
 Detection of Forest Fires using Satellite Imagery and Machine Learning.
