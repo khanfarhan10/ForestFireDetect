@@ -1,0 +1,8 @@
+pandas # ==1.2.3 # handling CSVs, EXCELs
+matplotlib # ==3.2 # latest ==3.3.4
+seaborn
+keras
+scikit-learn
+tensorflow
+ipykernel 
+scipy
