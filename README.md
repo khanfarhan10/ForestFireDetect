@@ -3,11 +3,23 @@
 <br>
 <br>
   <img src="https://forthebadge.com/images/badges/built-with-love.svg">     <img src="https://forthebadge.com/images/badges/made-with-python.svg">    <img src="https://forthebadge.com/images/badges/open-source.svg">
+  
+<p align="center">
+  <img src="/Images/Home.png">
+</p>
+<br/>
 
 # Fire - O - Detect
 Detection of Forest Fires using Satellite Imagery and Machine Learning.
 
 ### [Watch the Video Presentation on YouTube!](https://youtu.be/hV2cxghatG4)
+
+ # User Interface of Application⚡:
+<pre>
+
+<img src="/Images/ui1.png" width="700"> <img src="/Images/ui2.png" width="700">  <img src="/Images/map.png" width="700">  <img src="/Images/ROI.png" width="700"> <img src="/Images/threats.png" width="700"> 
+ 
+ </pre>
 
 
 # She the Force: Hack for Sustainability
@@ -61,6 +73,14 @@ Cloud. With the help of IBM Cloud these information will be stored safely. We ha
 model which is capable of doing instance segmentation. This model will segregate fire in three parts on the
 basis of intensity of the fire (eg.- HIGH, MODERATE, LOW). Also an alarm will be there to alert in
 urgency.
+
+## WORKFLOW: 
+
+
+<p align="center">
+  <img src="/Images/WorkFlow.png">
+</p>
+<br/>
 
 ## FUTURE PROSPECT:
 Forest fire can occur due to either human behavior or by nature itself. Man-made causes are
