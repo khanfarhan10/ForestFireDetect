@@ -5,7 +5,7 @@
   <img src="https://forthebadge.com/images/badges/built-with-love.svg">     <img src="https://forthebadge.com/images/badges/made-with-python.svg">    <img src="https://forthebadge.com/images/badges/open-source.svg">
   
 <p align="center">
-  <img src="/Images/Home.jpg">
+  <img src="/Images/Home.jpg" width="600" height="600">
 </p>
 <br/>
 
