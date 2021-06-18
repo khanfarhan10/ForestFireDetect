@@ -190,7 +190,7 @@ if red == "About the Project":
     burned in a forest fire based on some parameters like `Humidity(RH)`, `Wind(wind)`,`Rain(rain)`, 
     `Temperature(temp)` etc. 
     
-    The project is a part of Hacktoberfest contribution and it has been initiated by <a href="https://github.com/dsc-iem">DSC-IEM</a> .
+    The project ff is a part of Hacktoberfest contribution and it has been initiated by <a href="https://github.com/dsc-iem">DSC-IEM</a> .
     We used different Model Building techniques for building the model and did an in-depth exploratory analysis 
     of the provided data. And except these things, creating a user-friendly web-app and deploying it in cloud is 
     also an integral part of a Data Science life cycle. So, we also have put together this web-app to show that.
