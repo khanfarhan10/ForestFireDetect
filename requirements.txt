@@ -1,8 +1,8 @@
 pandas # ==1.2.3 # handling CSVs, EXCELs
-matplotlib # ==3.2 # latest ==3.3.4
-seaborn
-keras
+# matplotlib # ==3.2 # latest ==3.3.4
 scikit-learn
-tensorflow
+opencv-python
+geemap
+earthengine-api
+streamlit
 ipykernel 
-scipy

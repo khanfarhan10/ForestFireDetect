@@ -1,5 +1,5 @@
-virtualenv ModelEnv
-ModelEnv\Scripts\activate
+virtualenv FireEnv
+FireEnv\Scripts\activate
 conda.bat deactivate
 
 
