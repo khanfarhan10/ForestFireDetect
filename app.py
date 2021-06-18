@@ -11,6 +11,15 @@ import geemap
 import os
 import cv2
 
+def getMidpoint(P1,P2):
+  x1,y1 = P1
+  x2,y2 = P2
+
+  xCenter = (x1 + x2) / 2
+  yCenter = (y1 + y2) / 2
+
+  return xCenter,yCenter
+
 Map = geemap.Map()
 
 # Load the Nighttime Image Collection
@@ -68,14 +77,7 @@ x2,y2 = P2
 roi = ee.Geometry.Rectangle([x1,y1,x2,y2])
 bounded = dataset.filterBounds(roi)
 
-def getMidpoint(P1,P2):
-  x1,y1 = P1
-  x2,y2 = P2
 
-  xCenter = (x1 + x2) / 2
-  yCenter = (y1 + y2) / 2
-
-  return xCenter,yCenter
 
 PCenter = getMidpoint(P1,P2)
 
@@ -85,7 +87,7 @@ xCenter,yCenter = PCenter
 first_image = bounded.first()
  
 # Display band information about the image
-first_image.bandNames().getInfo()
+# first_image.bandNames().getInfo()
 
 lengthCollection = bounded.size()
 listOfImages = ee.Image(bounded.toList(bounded.size()));
