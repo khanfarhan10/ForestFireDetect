@@ -2,7 +2,8 @@ pandas # ==1.2.3 # handling CSVs, EXCELs
 # matplotlib # ==3.2 # latest ==3.3.4
 scikit-learn
 opencv-python
-geemap
-earthengine-api
+geemap==0.8.16
+earthengine-api==0.1.269
 streamlit
 ipykernel 
+streamlit-folium

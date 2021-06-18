@@ -7,6 +7,8 @@ cd FresnelTask
 pip install -r requirements.txt
 pip list -> full_reqs.txt
 
+streamlit run app.py
+
 
 python assets/code/example.py
 python assets/code/RastriginSol1v3.py

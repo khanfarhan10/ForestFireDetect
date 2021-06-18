@@ -4,6 +4,108 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 import streamlit.components.v1 as components
+from streamlit_folium import folium_static
+import folium
+import ee
+import geemap
+import os
+
+Map = geemap.Map()
+
+# Load the Nighttime Image Collection
+RTMA_Image_Collection = 'NOAA/NWS/RTMA'
+all_collection = ee.ImageCollection(RTMA_Image_Collection)
+
+from datetime import datetime, timedelta
+date_today = datetime.today().strftime('%Y-%m-%d')
+date_yesterday = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')
+
+print("Date Today :",date_today,"| Date Yesterday :",date_yesterday)
+
+dataset = all_collection.filter(ee.Filter.date(date_yesterday, date_today))
+
+Map.add_basemap('Google Satellite') # 'Google Satellite' / Terrain
+
+# Draw any shapes on the map using the Drawing tools before executing this code block
+try :
+    feature = Map.draw_last_feature
+except:
+    feature=None
+if feature is None:
+
+    geom = ee.Geometry.Polygon([[[-124.86316,56.97715],
+    [-70.20644,53.78275],
+    [-73.90380, 26.83366],
+    [-134.74959, 27.33460]]])
+    feature = ee.Feature(geom, {})
+
+roi = feature.geometry()
+from copy import deepcopy
+aoi = deepcopy(roi)
+
+feat = ee.Feature(roi)
+Map.addLayer(feat);
+Map.centerObject(feature,4);
+
+# sf = ee.Geometry.Point([-122.47555371521855, 37.76884708376152]);
+# Amazon Rainforests
+P1 = (-3.03014,-62.60020)
+P2 = (-3.71241,-61.74739)
+
+# North America
+P1 = (-40,-20)
+P2= (40,20)
+
+# South America
+P1 = (7.3625,266.9549)
+P2= (-52.9089,335.1825)
+
+x1,y1 = P1
+x2,y2 = P2
+
+# roi = ee.Geometry.Rectangle([-40, -20, 40, 20])
+roi = ee.Geometry.Rectangle([x1,y1,x2,y2])
+bounded = dataset.filterBounds(roi)
+
+def getMidpoint(P1,P2):
+  x1,y1 = P1
+  x2,y2 = P2
+
+  xCenter = (x1 + x2) / 2
+  yCenter = (y1 + y2) / 2
+
+  return xCenter,yCenter
+
+PCenter = getMidpoint(P1,P2)
+
+xCenter,yCenter = PCenter
+
+# Extract the first image
+first_image = bounded.first()
+ 
+# Display band information about the image
+first_image.bandNames().getInfo()
+
+lengthCollection = bounded.size()
+listOfImages = ee.Image(bounded.toList(bounded.size()));
+firstImage = ee.Image(listOfImages.get(0));
+secondImage = ee.Image(listOfImages.get(1));
+lastImage = ee.Image(listOfImages.get(lengthCollection.subtract(1)));
+
+# Compute the median in each band, each pixel.
+# Band names are B1_median, B2_median, etc.
+median = bounded.reduce(ee.Reducer.median());
+median.bandNames().getInfo()
+
+# The output is an Image.  Add it to the map.
+vis_param = {"bands": ['TMP_median', 'WDIR_median', 'WIND_median'], "gamma": 0.8};
+
+# Map.setCenter(-122.3355, 37.7924, 9);
+
+Map.addLayer(median, vis_param, RTMA_Image_Collection, True, 1)
+
+
+
 
 # df = pd.read_csv("forestfires.csv")
 #all functions
@@ -32,28 +134,8 @@ def main_prediction():
     img_top = """<center><img src="https://i.imgur.com/yOS7IGv.png" width="700px"></center>"""
     st.markdown(img_top,unsafe_allow_html=True)
     st.markdown("""<br>""",unsafe_allow_html=True)
-    x = st.text_input("X","Enter an integer e.g. 5")
-    y = st.text_input("Y","Enter an integer e.g. 5")
-    month = st.text_input("Month","e.g. for February enter 2")
-    ffmc = st.text_input("FFMC","e.g. 91.7")
-    dmc = st.text_input("DMC","e.g. 26.2")
-    dc = st.text_input("DC","e.g. 77.5")
-    temp = st.text_input("Temp","e.g. 14.6")
-    # num = st.number_input("Enter a number",5)
-    result=""
-    if st.button("Predict"):
-        try:
-            result=predict_forest_fire(x,y,month,ffmc,dmc,dc,temp)
-            st.success('The output is {}'.format(result))
-            st.balloons()
-            
-        except:
-            st.error("Please fill up all the inputs and make sure all are in numeric form")
-    # st.balloons()
-    if st.button("About"):
-        """The Project is Called `Forest Fire Prediction`, this is the [GitHub Repository README](https://github.com/khanfarhan10/ForestFireDetect) 
-        ,from here you can learn more about the input parameters."""
-        
+    with st.echo():
+        folium_static(Map)
         
 # @st.cache
 def corr_plot():
