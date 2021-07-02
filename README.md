@@ -86,3 +86,29 @@ Forest fire can occur due to either human behavior or by nature itself. Man-made
 reduced fairly in recent years but natural causes are quite challenging to predict beforehand.
 So our idea will help users to predict and prevent fire at a very early stage. So gamaged can
 be minimised and the ecosystem nurtured within it can be protected. 
+
+## TEAM TECHSTARS
+
+
+_Authors_ : 
+- **Srijani Das (Team Lead)** 
+<a href="https://www.linkedin.com/in/srijani-das-4797821ab/"><img src="https://180dc.org/wp-content/uploads/2020/01/Linkedin-logo-1-550x550-300x300.png" alt="LinkedIn" width="20" height="20"></a> 
+<a href="mailto:srijani.das989@gmail.com"><img src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png" alt="GMail" width="30" height="20"></a>
+- **Hadeeqa Nishat**
+<a href="https://www.linkedin.com/in/hadeeqa-nishat-3097791b0/"><img src="https://180dc.org/wp-content/uploads/2020/01/Linkedin-logo-1-550x550-300x300.png" alt="LinkedIn" width="20" height="20"></a> 
+<a href="mailto:nhadeeqa@gmail.com"><img src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png" alt="GMail" width="30" height="20"></a>
+- **Sayanti Dutta**
+<a href="https://www.linkedin.com/in/sayantidutta/"><img src="https://180dc.org/wp-content/uploads/2020/01/Linkedin-logo-1-550x550-300x300.png" alt="LinkedIn" width="20" height="20"></a> 
+<a href="mailto:sayantidutta.dgp@gmail.com"><img src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png" alt="GMail" width="30" height="20"></a>
+- **Arbhijay Saha**
+<a href="https://www.linkedin.com/in/arbhijay-saha-893249181/"><img src="https://180dc.org/wp-content/uploads/2020/01/Linkedin-logo-1-550x550-300x300.png" alt="LinkedIn" width="20" height="20"></a> 
+<a href="https://github.com/Arbhijay"><img src="https://www.iconsdb.com/icons/preview/white/github-11-xxl.png" alt="GitHub" width="20" height="20"></a>
+<a href="mailto:arbhijaysaha.net@gmail.com"><img src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png" alt="GMail" width="30" height="20"></a> 
+- [**Farhan Hai Khan**](https://khanfarhan10.github.io/) 
+<a href="https://orcid.org/0000-0001-9854-760X"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCid" width="20" height="20"></a> 
+<a href="https://www.linkedin.com/in/fkpro/"><img src="https://180dc.org/wp-content/uploads/2020/01/Linkedin-logo-1-550x550-300x300.png" alt="LinkedIn" width="20" height="20"></a> 
+<a href="mailto:njrfarhandasilva10@gmail.com"><img src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png" alt="GMail" width="30" height="20"></a>
+<a href="mailto:khanfarhanpro@gmail.com"><img src="http://clipart-library.com/images/6cyoLaA9i.png" alt="Mail" width="30" height="20"></a>
+<a href="https://github.com/khanfarhan10"><img src="https://www.iconsdb.com/icons/preview/white/github-11-xxl.png" alt="GitHub" width="20" height="20"></a>
+<a href="https://www.researchgate.net/profile/Farhan-Hai-Khan"><img src="https://media.glassdoor.com/sql/526840/researchgate-squarelogo-1488811667083.png" alt="ResearchGate" width="20" height="20"></a>
+
